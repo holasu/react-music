@@ -34,6 +34,7 @@ class Form extends Component {
   }
 
   render() {
+    console.log('state', this.state);
     return (
       <div className="form">
         <form onSubmit={this.handleSubmit}>
