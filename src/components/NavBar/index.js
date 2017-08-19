@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './styles.css';
-const words = ['artists', 'band', 'music', 'style'];
+const words = ['songs', 'bands', 'music', 'artists'];
 
 class NavBar extends Component {
   constructor(props) {
@@ -28,7 +28,7 @@ class NavBar extends Component {
           <h1>Favorite Artists</h1>
         </div>
         <div className="middle-page">
-          <p>Share your favorite <span className="changing-word">{word}</span> and songs.</p>
+          <p>Share your favorite <span className="changing-word">{word}</span>.</p>
         </div>
       </div>
     )

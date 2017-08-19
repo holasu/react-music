@@ -8,8 +8,17 @@
   font-weight: 500;
 }
 
+.navbar-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 20em;
+  width: 100%;
+}
+
 h1 {
   font-family: 'Nunito', sans-serif;
+  font-size: 40px;
 }
 
 h1:hover {
@@ -20,13 +29,14 @@ p {
   margin: 0;
   color: rgba(255, 255, 255, 0.5);
   font-family: 'Roboto', sans-serif;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .changing-word {
   animation: FADE-IN-AND-OUT 3s infinite;
   opacity: 0;
 }
+
 
 @keyframes FADE-IN-AND-OUT {
   0% { opacity: 0; }
