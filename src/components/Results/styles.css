@@ -2,19 +2,21 @@
 
 .results {
   background: transparent;
-  overflow: scroll;
   height: 50vh;
+  width: 30em;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .result-item {
-  width: 40em;
+  width: 25em;
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 30px;
   color: white;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 1em;
+  margin: 1em 0;
 }
 
 h4 {
@@ -22,4 +24,5 @@ h4 {
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
   font-size: 1em;
+  color: rgba(255, 255, 255, 0.7);
 }

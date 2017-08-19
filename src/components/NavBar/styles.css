@@ -22,3 +22,14 @@ p {
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
 }
+
+.changing-word {
+  animation: FADE-IN-AND-OUT 3s infinite;
+  opacity: 0;
+}
+
+@keyframes FADE-IN-AND-OUT {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}

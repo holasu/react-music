@@ -12,8 +12,8 @@ class Results extends Component {
   render(){
     return (
       <div className="results">
-        {map(reverse(this.props.users), (user) => (
-          <div className="result-item">
+        {map(reverse(this.props.users), (user, index) => (
+          <div className="result-item" key={`${user.userName}-${index}`}>
             <h4>User: { user.userName }</h4>
             <h4>Artist/Band: { user.artist }</h4>
             <h4>Title: { user.songTitle }</h4>
