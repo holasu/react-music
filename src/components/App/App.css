@@ -1,24 +1,36 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
 .App {
   text-align: center;
+  background: url('../../assets/audience.jpg');
+  background-size: cover;
+  background-color: rgba(0,0,0,0.5);
+  height: 100%;
+  width: 100%;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+div.over-wrapper {
+  background: linear-gradient(#000, rgba(0,0,0,0.5));
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.top-content {
+  height: 20em;
 }
 
-.App-intro {
-  font-size: large;
+.middle-content {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  width: 100vw;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.middle-content-item {
+  margin: 10em;
+  width: 20%;
 }

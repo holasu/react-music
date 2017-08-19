@@ -1,0 +1,25 @@
+/* RESUTLS CSS */
+
+.results {
+  background: transparent;
+  overflow: scroll;
+  height: 50vh;
+}
+
+.result-item {
+  width: 40em;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 30px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 1em;
+}
+
+h4 {
+  margin-left: 1em;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-size: 1em;
+}

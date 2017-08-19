@@ -1,6 +1,8 @@
 import React, { Component, PropTypes } from 'react';
 import Form from '../Form';
 import map from 'lodash/map';
+import reverse from 'lodash/reverse';
+import './styles.css'
 
 class Results extends Component {
   static propTypes = {
@@ -10,7 +12,7 @@ class Results extends Component {
   render(){
     return (
       <div className="results">
-        {map(this.props.users, (user) => (
+        {map(reverse(this.props.users), (user) => (
           <div className="result-item">
             <h4>User: { user.userName }</h4>
             <h4>Artist/Band: { user.artist }</h4>

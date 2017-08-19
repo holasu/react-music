@@ -1,38 +1,63 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
+import './styles.css';
 
 class Form extends Component {
-  constructor() {
-    super();
+  static propTypes = {
+    addUser: PropTypes.func.isRequired,
+  };
+
+  constructor(props) {
+    super(props);
     this.state = {
       userName: "",
       artist: "",
       songTitle: "",
       notes: ""
     }
-    this.handleUserInput = this.handleUserInput.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  handleUserInput(event, key) {
+  handleUserInput = (event, key) => {
     this.setState({
       [key]: event.target.value
     });
   }
 
-  handleSubmit(event) {
+  handleSubmit = (event) => {
     event.preventDefault();
     this.props.addUser(this.state);
+    this.setState({
+      userName: "",
+      artist: "",
+      songTitle: "",
+      notes: ""
+    })
   }
 
   render() {
     return (
       <div className="form">
         <form onSubmit={this.handleSubmit}>
-          <input onChange={(event) => this.handleUserInput(event, 'userName')} value={ this.state.userName } />
-          <input onChange={(event) => this.handleUserInput(event, 'artist')} value={ this.state.artist } />
-          <input onChange={(event) => this.handleUserInput(event, 'songTitle')} value={ this.state.songTitle } />
-          <input onChange={(event) => this.handleUserInput(event, 'notes')} value={ this.state.notes } />
-          <button type="submit">Submit</button>
+          <input
+            onChange={(event) => this.handleUserInput(event, 'userName')}
+            value={ this.state.userName }
+            placeholder="Username"
+          />
+          <input
+            onChange={(event) => this.handleUserInput(event, 'artist')}
+            value={ this.state.artist }
+            placeholder="Artist"
+          />
+          <input
+            onChange={(event) => this.handleUserInput(event, 'songTitle')}
+            value={ this.state.songTitle }
+            placeholder="Song Title"
+          />
+          <input
+            onChange={(event) => this.handleUserInput(event, 'notes')}
+            value={ this.state.notes }
+            placeholder="Notes"
+          />
+          <button type="submit">Add Artist</button>
         </form>
       </div>
     )

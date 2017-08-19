@@ -1,0 +1,52 @@
+/* FORM CSS*/
+
+form {
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  margin: 1.5em 0em;
+  width: 40em;
+  height: 3em;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: rgba(255, 255, 255, 0.7);
+  border-style: none;
+  text-align: center;
+  border-radius: 10px;
+  transition: 0.7s;
+}
+
+input:focus, input:hover {
+  outline: none;
+  background-color: rgba(179, 179, 179, 0.2);
+  transition: 0.7s;
+}
+
+input[placeholder] {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+button {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  width: 30em;
+  height: 3em;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-style: none;
+  color: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  transition: 0.7s;
+}
+
+button:focus, button:hover {
+  outline: none;
+  background-color: rgba(179, 179, 179, 0.2);
+  transition: 0.7s;
+}
