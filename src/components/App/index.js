@@ -1,10 +1,12 @@
+//Dependencies
 import React, { Component } from 'react';
+//Internals
 import NavBar from '../NavBar';
 import Form from '../Form';
 import Results from '../Results';
 import './App.css';
+//Constants
 const USERS_URL = 'https://tiny-lasagna-server.herokuapp.com/collections/playlisting';
-
 
 class App extends Component {
   constructor() {
@@ -28,6 +30,7 @@ class App extends Component {
       });
   }
 
+  //Add user to API,  POST request
   addUserToApi = (user) => {
     fetch(USERS_URL, {
       method: "POST",

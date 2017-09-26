@@ -1,4 +1,6 @@
+//Dependencies
 import React, { Component, PropTypes } from 'react';
+//Internals
 import './styles.css';
 
 class Form extends Component {
@@ -22,6 +24,7 @@ class Form extends Component {
     });
   }
 
+  //Handle submit and clear field
   handleSubmit = (event) => {
     event.preventDefault();
     this.props.addUser(this.state);
@@ -34,7 +37,6 @@ class Form extends Component {
   }
 
   render() {
-    console.log('state', this.state);
     return (
       <div className="form">
         <form onSubmit={this.handleSubmit}>
