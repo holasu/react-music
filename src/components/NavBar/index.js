@@ -1,4 +1,6 @@
+//Dependencies
 import React, { Component } from 'react';
+//Internals
 import './styles.css';
 const words = ['songs', 'bands', 'music', 'artists'];
 

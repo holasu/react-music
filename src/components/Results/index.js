@@ -1,7 +1,9 @@
+//Dependencies
 import React, { Component, PropTypes } from 'react';
-import Form from '../Form';
 import map from 'lodash/map';
 import reverse from 'lodash/reverse';
+//Internals
+import Form from '../Form';
 import './styles.css'
 
 class Results extends Component {
