@@ -24,7 +24,7 @@ class NavBar extends Component {
   render() {
     const index = this.state.index % words.length;
     const word = words[index];
-    return(
+    return (
       <div className="navbar-wrapper">
         <div className="navbar">
           <h1>Favorite Artists</h1>
@@ -33,7 +33,7 @@ class NavBar extends Component {
           <p>Share your favorite <span className="changing-word">{word}</span>.</p>
         </div>
       </div>
-    )
+    );
   }
 }
 

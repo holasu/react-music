@@ -41,18 +41,17 @@ class App extends Component {
       }
     })
       .then(res => {
-        console.log(res, "yay");
+        console.log(res, "Success");
       })
       .catch(err => {
-        console.log(err, "boo!");
+        console.log(err, "Oh no, an error occured!");
       });
   }
 
   addUser = (user) => {
-    // Asynchronous call to add user to API.
     this.addUserToApi(user);
-    // Add user to 'users' in our App state.
     const { users } = this.state;
+
     users.push(user);
     this.setState({ users });
   }

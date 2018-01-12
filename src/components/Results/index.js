@@ -23,7 +23,7 @@ class Results extends Component {
           </div>
         ))}
       </div>
-    )
+    );
   }
 }
 

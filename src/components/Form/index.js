@@ -11,10 +11,10 @@ class Form extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      userName: "",
-      artist: "",
-      songTitle: "",
-      notes: ""
+      userName: '',
+      artist: '',
+      songTitle: '',
+      notes: '',
     }
   }
 
@@ -29,17 +29,17 @@ class Form extends Component {
     event.preventDefault();
     this.props.addUser(this.state);
     this.setState({
-      userName: "",
-      artist: "",
-      songTitle: "",
-      notes: ""
+      userName: '',
+      artist: '',
+      songTitle: '',
+      notes: '',
     })
   }
 
   render() {
     return (
       <div className="form">
-        <form onSubmit={this.handleSubmit}>
+        <form onSubmit={ this.handleSubmit }>
           <input
             onChange={(event) => this.handleUserInput(event, 'userName')}
             value={ this.state.userName }
@@ -63,7 +63,7 @@ class Form extends Component {
           <button type="submit">Add Artist</button>
         </form>
       </div>
-    )
+    );
   }
 }
 
